@@ -1,3 +1,5 @@
+//Represents the writer of a book
+
 public class Author {
     
     private long id;

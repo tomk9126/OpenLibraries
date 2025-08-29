@@ -1,3 +1,5 @@
+//Represents a book, not a particular copy but, as a whole.
+
 public class Book {
     
     private long id;
