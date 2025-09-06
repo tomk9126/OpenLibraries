@@ -1,3 +1,4 @@
+package People;
 //Represents the writer of a book
 
 public class Author {

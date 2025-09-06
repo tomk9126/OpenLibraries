@@ -1,3 +1,4 @@
+package People;
 //Represents a person registered at library
 
 public class Member {
@@ -10,6 +11,10 @@ public class Member {
     public Member(String name, String email) {
         this.name = name;
         this.email = email;
+    }
+
+    public String toString() {
+        return name;
     }
 
     //Getters and Setters

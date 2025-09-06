@@ -1,4 +1,7 @@
+package Things;
 //Represents a book, not a particular copy but, as a whole.
+
+import People.Author;
 
 public class Book {
     

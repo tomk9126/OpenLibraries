@@ -1,26 +1,29 @@
+package Things;
+import CopyStatus;
+
 public class Copy {
     private long id;
-    private long bookId; //Which book is this copy of?
+    private Book book; //Which book is this copy of?
     private String barcode;
-    private String status; //'Available' 'Loaned' 'Lost' 'Damaged'
+    private CopyStatus status;
 
     //Constructor
-    public Copy(long bookid, String barcode, String status) {
-        this.bookId = bookid;
+    public Copy(Book book, String barcode, CopyStatus status) {
+        this.book = book;
         this.barcode = barcode;
-        this.status = "Available";
+        this.status = CopyStatus.AVAILABLE;
     }
 
     //Getters / Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
-    public Long getBookId() { return bookId; }
-    public void setBookId(Long bookId) { this.bookId = bookId; }
+    public Book getBook() { return book; }
+    public void setBook(Book book) { this.book = book; }
 
     public String getBarcode() { return barcode; }
     public void setBarcode(String barcode) { this.barcode = barcode; }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public CopyStatus getStatus() { return status; }
+    public void setStatus(CopyStatus status) { this.status = status; }
 }
