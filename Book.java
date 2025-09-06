@@ -6,12 +6,14 @@ public class Book {
     private String isbn;
     private String title;
     private String publisher;
+    private Author author;
     private int year;
     
     //Constructor Class
-    public Book(String title, String isbn) {
+    public Book(String title, String isbn, Author author) {
         this.title = title;
         this.isbn = isbn;
+        this.author = author;
     }
 
     //Getters and Setters
@@ -24,6 +26,9 @@ public class Book {
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
+    public Author getAuthor() { return author; }
+    public void setAuthor(Author author) { this.author = author; }
+
     public String getPublisher() { return publisher; }
     public void setPublisher(String publisher) { this.publisher = publisher; }
 
@@ -33,7 +38,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return name;
+        return title;
     } 
     
 }

@@ -2,14 +2,13 @@
 
 public class Member {
     private long id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
     private String phone;
 
     //Constructor
-    public Member(string name, String email) {
-        this.name = firstName + lastName;
+    public Member(String name, String email) {
+        this.name = name;
         this.email = email;
     }
 

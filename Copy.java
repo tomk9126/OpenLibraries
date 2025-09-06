@@ -1,12 +1,12 @@
 public class Copy {
     private long id;
-    private long bookid; //Which book is this copy of?
+    private long bookId; //Which book is this copy of?
     private String barcode;
     private String status; //'Available' 'Loaned' 'Lost' 'Damaged'
 
     //Constructor
     public Copy(long bookid, String barcode, String status) {
-        this.bookid = bookid;
+        this.bookId = bookid;
         this.barcode = barcode;
         this.status = "Available";
     }
