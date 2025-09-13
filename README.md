@@ -1,0 +1,1 @@
+OpenLibraries will be an open-source library managment tool that can be adapted to a variety of use-cases, including e-books, DVDs, and other media. It will include a GUI as well as a CLI with support for SQL querying.
